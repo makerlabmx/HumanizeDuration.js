@@ -1,6 +1,6 @@
 // HumanizeDuration.js - http://git.io/j0HgmQ
 
-;(function () {
+(function () {
   var languages = {
     ar: {
       y: function (c) { return c === 1 ? 'سنة' : 'سنوات' },
@@ -530,13 +530,13 @@
 
   humanizeDuration.humanizer = humanizer
 
-  if (typeof define === 'function' && define.amd) {
+  /*if (typeof define === 'function' && define.amd) {
     define(function () {
       return humanizeDuration
     })
   } else if (typeof module !== 'undefined' && module.exports) {
     module.exports = humanizeDuration
-  } else {
+  } else {*/
     this.humanizeDuration = humanizeDuration
-  }
+  //}
 })();  // eslint-disable-line semi
